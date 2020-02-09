@@ -3,6 +3,7 @@ package com.example.computer_ren.otherapplication;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.os.RemoteException;
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         initView();
+
+        //动态注册广播  和activity周期绑定  activity销毁后将接收不到广播
+//        MyBroadCast broadCast = new MyBroadCast();
+//        IntentFilter filter = new IntentFilter();
+//        filter.addAction("com.example.computer_ren.otherapplication.BroadCast");
+//        registerReceiver(broadCast,filter);
     }
 
     private void initView() {

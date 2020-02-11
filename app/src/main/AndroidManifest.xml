@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".ContentProviderActivitty"
             android:exported="true"/>
+        <activity android:name=".IntentActivity"
+            android:exported="true"/>
 
         <!--        静态注册广播，不随activty的周期，activity销毁依然能接收到广播-->
         <receiver android:name=".MyBroadCast">

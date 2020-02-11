@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContentProviderActivitty extends Activity implements View.OnClickListener {
+public class ContentProviderActivitty extends AppCompatActivity implements View.OnClickListener {
     private Button insertBtn,deleteBtn,updateBtn,queryBtn;
     private TextView showTv;
 
